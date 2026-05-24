@@ -172,7 +172,7 @@ elif st.session_state.screen == 'results':
     st.write("Based on an acoustic analysis of both recordings:")
 
     # if avg > 0.5:
-    if p1 > 0.5 or p2 > 0.5
+    if p1 > 0.5 or p2 > 0.5:
         st.warning("Voice patterns consistent with Parkinson's disease have been detected. A medical consultation is recommended.")
     else:
         st.success("Your voice shows consistent and healthy patterns.")
