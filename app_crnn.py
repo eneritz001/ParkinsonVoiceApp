@@ -139,7 +139,7 @@ elif st.session_state.screen == 'test':
     st.markdown("---")
 
     if audio1 and audio2 and ('bytes' in audio1) and ('bytes' in audio2):
-        if st.button("📊 Analyse Both Audio Files and Generate a Diagnosis", use_container_width=True, type="primary"):
+        if st.button("Analyse Both Audio Files and Generate a Diagnosis", use_container_width=True, type="primary"):
             with st.spinner("The CRNN neural network is averaging the spectral features..."):
                 
                 in1 = preprocess_audio_bytes(audio1['bytes'])
